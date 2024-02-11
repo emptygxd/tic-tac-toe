@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="colors">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/import.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="buttons">
+        <button id="turbo">
+          <img id="turbo__img" src="./assets/thunder.png" alt="turbo" />
+        </button>
+      </div>
+      <section class="game__timer">
+        <p class="timer">0:0<span id="timer">5</span></p>
+      </section>
+
+      <section class="game__turn">
+        <h2 id="turn">Player 1’s Turn</h2>
+      </section>
+    </header>
+
+    <main class="game__main">
+      <section>
+        <div id="game__field">
+          <div id="1" class="cell"></div>
+          <div id="2" class="cell"></div>
+          <div id="3" class="cell"></div>
+          <div id="4" class="cell"></div>
+          <div id="5" class="cell"></div>
+          <div id="6" class="cell"></div>
+          <div id="7" class="cell"></div>
+          <div id="8" class="cell"></div>
+          <div id="9" class="cell"></div>
+        </div>
+
+        <div>
+          <p class="score">Score:</p>
+          <p>1st player: <span id="p1Score">0</span></p>
+          <p>2nd player: <span id="p2Score">0</span></p>
+        </div>
+      </section>
+
+      <button id="reset">Restart</button>
+    </main>
+  </body>
+  <script src="./script/game.js" type="module"></script>
+</html>

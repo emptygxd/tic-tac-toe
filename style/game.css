@@ -1,0 +1,81 @@
+header {
+  margin-bottom: 45px;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 23px;
+  position: relative;
+}
+
+header .buttons {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+#turbo {
+  width: 120px;
+  height: 120px;
+}
+
+#timer,
+.timer {
+  color: var(--black);
+}
+
+.game__timer {
+  width: 150px;
+  height: 55px;
+
+  border-radius: 100px;
+  background-color: var(--white);
+  box-shadow: 2px 2px 8px var(--shadow-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game__main {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 70px;
+}
+
+#game__field ~ div {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#reset {
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px var(--shadow-color);
+}
+
+#reset:hover {
+  background-color: var(--hover);
+}
+
+#game__field {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  border: 25px solid var(--white);
+  border-radius: 20px;
+  background-color: var(--hover);
+}
+
+.cell {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  background-color: var(--white);
+  cursor: pointer;
+}
