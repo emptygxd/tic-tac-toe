@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-y: hidden;
 }
 
 .colors {
@@ -18,7 +17,7 @@
 
 body {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 
   background: linear-gradient(
     162deg,
@@ -38,14 +37,29 @@ button {
   text-shadow: 2px 2px 8px var(--shadow-color);
   color: var(--white);
 }
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 25px;
+  }
+}
 
 h2 {
   font-size: 36px;
+}
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 20px;
+  }
 }
 
 p {
   font-weight: 500;
   font-size: 24px;
+}
+@media screen and (max-width: 576px) {
+  p {
+    font-size: 15px;
+  }
 }
 
 button {
@@ -78,6 +92,11 @@ footer {
   display: flex;
   gap: 25px;
 }
+@media screen and (max-width: 576px) {
+  .buttons {
+    gap: 10px;
+  }
+}
 
 .buttons button {
   width: 143px;
@@ -88,6 +107,13 @@ footer {
 
   position: relative;
 }
+@media screen and (max-width: 576px) {
+  .buttons button {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+  }
+}
 
 .buttons button:hover {
   background-color: var(--hover);
@@ -96,6 +122,12 @@ footer {
 img {
   width: 110px;
   height: 110px;
+}
+@media screen and (max-width: 576px) {
+  img {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .cross::before {

@@ -1,5 +1,5 @@
-import { checkFirstPlayer } from "./checkFirstPlayer.js";
 import { CELLS } from "./constants.js";
+import { checkFirstPlayer } from "./checkFirstPlayer.js";
 
 function getRandomCell() {
   const randArr = [];

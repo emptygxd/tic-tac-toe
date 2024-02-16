@@ -1,5 +1,5 @@
 import { PLAYER_TURN_OUTPUT, FIELD } from "./constants.js";
-import { startTimer, stopTimer } from "./timer.js";
+import { startTimer, stopTimer } from "./helper/helperFunction.js";
 import { checkFirstPlayer } from "./checkFirstPlayer.js";
 import { botMove } from "./bot.js";
 

@@ -18,6 +18,17 @@ header .buttons {
   width: 120px;
   height: 120px;
 }
+@media screen and (max-width: 576px) {
+  #turbo {
+    width: 50px;
+    height: 50px;
+  }
+
+  #turbo__img {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 #timer,
 .timer {
@@ -36,6 +47,12 @@ header .buttons {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 576px) {
+  .game__timer {
+    width: 70px;
+    height: 35px;
+  }
+}
 
 .game__main {
   display: flex;
@@ -43,6 +60,21 @@ header .buttons {
   justify-content: start;
   flex-direction: column;
   gap: 70px;
+}
+
+#game__field {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  border: 25px solid var(--white);
+  border-radius: 20px;
+  background-color: var(--hover);
+}
+@media screen and (max-width: 576px) {
+  #game__field {
+    border: 15px solid var(--white);
+    border-radius: 15px;
+  }
 }
 
 #game__field ~ div {
@@ -58,17 +90,15 @@ header .buttons {
   border-radius: 20px;
   box-shadow: 2px 2px 8px var(--shadow-color);
 }
-
-#reset:hover {
-  background-color: var(--hover);
+@media screen and (max-width: 576px) {
+  #reset {
+    width: 90px;
+    height: 40px;
+    border-radius: 15px;
+  }
 }
 
-#game__field {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  border: 25px solid var(--white);
-  border-radius: 20px;
+#reset:hover {
   background-color: var(--hover);
 }
 
@@ -78,4 +108,10 @@ header .buttons {
   height: 90px;
   background-color: var(--white);
   cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  .cell {
+    width: 50px;
+    height: 50px;
+  }
 }
