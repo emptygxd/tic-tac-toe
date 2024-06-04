@@ -24,6 +24,11 @@ body {
     var(--primary-color) 0%,
     var(--secondary-color) 100%
   );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px
 }
 
 h1,

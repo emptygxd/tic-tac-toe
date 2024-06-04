@@ -6,10 +6,12 @@ function count(player) {
   if (!(seconds < 0)) {
     TIMER.innerText = seconds;
   } else if (player === localStorage.getItem("firstPlayer")) {
-    endGame(MESSAGE_PLAYER_2);
+    endGame(MESSAGE_PLAYER_1);
+    p1Score.innerText = parseInt(p1Score.innerText) + 1;
     stopTimer();
   } else {
-    endGame(MESSAGE_PLAYER_1);
+    endGame(MESSAGE_PLAYER_2);
+    p2Score.innerText = parseInt(p2Score.innerText) + 1;
     stopTimer();
   }
 }
